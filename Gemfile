@@ -17,6 +17,7 @@ group :tools do
   gem 'guard-rspec' # automatically runs our tests whenever there have been changes made to them
 end
 
+
 group :development do
   gem 'rspec-rails', '~> 2.0' # using rspec instead of test unit
   gem 'better_errors' # makes the errors we see in the browser more descriptive
