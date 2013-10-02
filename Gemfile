@@ -18,7 +18,6 @@ group :tools do
   gem 'guard-rspec' # automatically runs our tests whenever there have been changes made to them
 end
 
-
 group :development do
   gem 'rspec-rails', '~> 2.0' # using rspec instead of test unit
   gem 'better_errors' # makes the errors we see in the browser more descriptive
@@ -30,4 +29,8 @@ group :test do
   gem 'rspec-rails', '~> 2.0' # using rspec instead of test unit
   gem "factory_girl_rails" 
   gem "capybara" # needed for our integration tests, which we'll talk about more later
+end
+
+group :development, :test do 
+  gem 'debugger'
 end
